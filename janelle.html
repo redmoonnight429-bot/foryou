@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For Janelle 💌</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; background: #fff0f5; color: #333; }
+    #text { font-size: 22px; margin: 100px 20px; min-height: 120px; }
+    button { padding: 12px 24px; font-size: 18px; border-radius: 12px; border: none; background: #ffb6c1; cursor: pointer; }
+    button:hover { background: #ff91af; }
+  </style>
+</head>
+<body>
+  <h1>💌 For Janelle 💌</h1>
+  <p id="text">You once asked me… why I wanted to get to know you, since I said “not in that way”…</p>
+  <button onclick="nextText()">Click me</button>
+
+  <script>
+    const messages = [
+      "The answer is… I feel like I should get to know you now, because…",
+      "To be honest, yeah… I like you. I can say it’s already been 7 years.",
+      "I actually wanted to tell you after my exams… but I understand, you probably couldn’t wait that long.",
+      "The reason I didn’t confess earlier is…\n1. Afraid of being rejected\n2. Afraid your studies might be affected\n3. I promised myself I’d confess after I’m taller than you 😅",
+      "So now… I’m not asking you to decide yet, whether you want a relationship or not. I respect your choice.",
+      "I just want to talk to you normally… so we can be more comfortable with each other.",
+      "To be honest, I feel excited whenever I see you or chat with you…",
+      "These days I feel more religious, because I’ve been saying your name in my prayers.",
+      "I’m sure this is unexpected, right? I’m not hoping for anything… because I don’t even know your feelings yet.",
+      "And last… thank you for being my motivation to keep me active and happy.",
+      "Thank you, Janelle 💕 You can ask me anything if you want to."
+    ];
+    let index = 0;
+    function nextText() {
+      if(index < messages.length){
+        document.getElementById("text").innerText = messages[index];
+        index++;
+      }
+    }
+  </script>
+</body>
+</html>
